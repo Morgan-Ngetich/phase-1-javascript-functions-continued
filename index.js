@@ -1,1 +1,21 @@
 // code your solution here
+function saturdayFun(activity = 'roller-skate' ) {
+  return `This Saturday, I want to ${activity}!`
+}
+saturdayFun('bathe my dog')
+
+const mondayWork  = function (activity = 'go to the office'){
+  return `This Monday, I will ${activity}.`
+}
+mondayWork("work from home")
+
+ function wrapAdjective(wrapper) {
+  return function(adjective) {
+    return `You are ${wrapper}${adjective}${wrapper}!`
+  }
+ }
+let result1 = wrapAdjective('*')
+let emphatic1 = result1('a hard worker')
+
+let result2 = wrapAdjective('||')
+let emphatic2 = result2('a dedicated programmer')
